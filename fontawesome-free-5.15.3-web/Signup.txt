@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+      <!-- Bootstrap CSS -->
+      <link  rel="stylesheet" href="art.css">
+      <link rel="stylesheet" href="signupstyle.css">
+      <link rel="stylesheet" href="signup.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="bootstrap-5.0.1-dist/bootstrap.min.js">
+      <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+      <link rel="stylesheet" href="scripts.js">
+      <title>Login</title>
+   </head>
+   <body>
+      <section class="header">
+         <nav>
+            <a href="médica.html"><img src="imgs/photo1.png"></a>         
+            <div class="nav-link">
+               <ul>
+                  <li><a href="médica.html">Home</a></li>
+                  <li><a href="aboutas.html" >About us</a></li>
+                  <li><button class="myBtn_multi"  >sign in</button> </li>
+                  <li><button  class="myBtnStyle" id="myBtn">Login</button></li>
+               </ul>
+            </div>
+         </nav>
+         <!--    The Login Modal  -->
+         <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <!-- bidaya --> 
+               <div class="container">
+                  <form id="signup">
+                     <span class="close">&times;</span>
+                     <div class="">
+                        <h2>Login </h2>
+                        <p>You want to fill out this form</p>
+                     </div>
+                     <div class="sep"></div>
+                     <div class="inputs">
+                        <input type="email" placeholder="e-mail" autofocus  id="xip_Name" />
+                        <input type="password" placeholder="Password" id="xip_Password"/>
+                        <div class="checkboxy">
+                           <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">Remember me</label>
+                        </div>
+                        <a id="submit" href="#">Log in</a>
+                     </div>
+                  </form>
+               </div>
+               <!-- nihaya -->
+            </div>
+         </div>
+         <!--  the sign In modal -->
+         <!-- The Modal -->
+         <div  class="modal modal_multi">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <span class="close close_multi">×</span>
+               <h2> choose how would you like to sign in  </h2>
+               <button> <a href="infermierform.html" target="_blank"> <img src="imgs/infermier.png" alt="" style="padding-top: 20px;
+                  width: 100px;"></a></button>
+
+               <button> <a href="docteurform.html" target="_blank"> <img src="imgs/doctorvect.png" alt="" style="padding-top: 20px;
+                  width: 100px;"></a></button>
+               <button> <a href="patientform.html" target="_blank"> <img src="imgs/Person with a cold-bro.png" alt="" style="padding-top: 20px;
+                  width: 100px;"></a></button>
+               <button> <a href="#" target="_blank"> hello</a></button>
+            </div>
+         </div>
+      </section>
+      <script>
+         // Get the modal
+         
+         var modalparent = document.getElementsByClassName("modal_multi");
+         
+         // Get the button that opens the modal
+         
+         var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+         
+         // Get the <span> element that closes the modal
+         var span_close_multi = document.getElementsByClassName("close_multi");
+         
+         // When the user clicks the button, open the modal
+         function setDataIndex() {
+         
+             for (i = 0; i < modal_btn_multi.length; i++)
+             {
+                 modal_btn_multi[i].setAttribute('data-index', i);
+                 modalparent[i].setAttribute('data-index', i);
+                 span_close_multi[i].setAttribute('data-index', i);
+             }
+         }
+         
+         
+         
+         for (i = 0; i < modal_btn_multi.length; i++)
+         {
+             modal_btn_multi[i].onclick = function() {
+                 var ElementIndex = this.getAttribute('data-index');
+                 modalparent[ElementIndex].style.display = "block";
+             };
+         
+             // When the user clicks on <span> (x), close the modal
+             span_close_multi[i].onclick = function() {
+                 var ElementIndex = this.getAttribute('data-index');
+                 modalparent[ElementIndex].style.display = "none";
+             };
+         
+         }
+         
+         window.onload = function() {
+         
+             setDataIndex();
+         };
+         
+         window.onclick = function(event) {
+             if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                 modalparent[event.target.getAttribute('data-index')].style.display = "none";
+             }
+         
+             // OLD CODE
+             if (event.target === modal) {
+                 modal.style.display = "none";
+             }
+         };
+         
+         //XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+         
+         // Get the modal
+         
+         var modal = document.getElementById('myModal');
+         
+         // Get the button that opens the modal
+         var btn = document.getElementById("myBtn");
+         
+         // Get the <span> element that closes the modal
+         var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+         
+         // When the user clicks on the button, open the modal
+         
+         btn.onclick = function() {
+         
+             modal.style.display = "block";
+         }
+         
+         // When the user clicks on <span> (x), close the modal
+         span.onclick = function() {
+             modal.style.display = "none";
+         }
+         
+         
+         
+      </script>
+   </body>

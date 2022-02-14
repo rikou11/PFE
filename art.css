@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sens',sans-serif;
+  
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imgs/medical-stethoscope-with-paper-cut-family.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 0% 6%;
+    height: 80px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+nav img{
+    padding-top: 50px;
+    width: 150px;
+}
+.nav-link{
+    flex:1;
+    text-align: right;
+  
+}
+.nav-link ul li{
+    margin-top:0px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-link ul li:hover::after{
+     width: 100%;
+
+}
+.text-box{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent ;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/* ------ 2nd page ---*/
+.abouas{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top:  100px ;
+
+}
+.abouas h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.abouas p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.défi{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.défi1{
+    flex-basis: 31%;
+    background: #f0f0f0a6;
+    border-radius: 10% ;
+    margin-bottom: 5%;
+    padding: 20px 9px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.défi1 h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.défi1:hover{
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.712);
+
+}
+.cmpus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.cpscol{
+    flex-basis: 32%;
+    border-radius:10px ;
+    margin-bottom: 30px;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.cpscol img{
+    width: 100%;
+    
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cpscol{
+    flex-basis: 32%;
+    background: #f0f0f0a6;
+    border-radius: 8% ;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+
+    transition: 0.5s;
+}
+.cpscol:hover{
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.712);
+
+}
+.cpscol h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.cpscol h3{
+    
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.712);
+ border-radius: 10px;
+}
+.cpscol img{
+    height: 160px;
+    width: 250px;
+    margin: 2px 0;
+    padding: 2px 0;
+    border-radius: 10px ;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.712);
+
+}
+.layer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fab{
+   color: #f44336;
+   margin: 0 13px;
+   cursor: pointer;
+   padding: 18px 0;
+
+}
+.icons a{
+    text-decoration: none;
+    display: inline;
+    color: #333;
+
+}
+.icons a:hover{
+    border: 1px solid #141313;
+    background: #8f716f;
+    transition: 1s;
+}
+.nav-link i{
+    margin: 8px;
+}
+
+
+/* mooooooooooooooooooooooooooooooooodaaaaaaaaaaaaaaaaaaal*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sens',sans-serif;
+  
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  
+  }
+ 
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 50px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+    border-radius: 5%;
+ 
+    /*box shadow*/
+    box-shadow: 0 0 30px 0px rgb(0, 0, 0);
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal h2{
+display: flex;
+
+
+  }
+
+
+/*   NEW code  */
+/* what inside the Login form 
+ */ 
+ .container {
+    width: 400px;
+   max-width: 400px;
+    margin: 0 auto;
+}
+
+#signup {
+    padding: 0px 25px 25px;
+    background: #fff;
+    box-shadow: 
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: static;
+}
+
+#signup .header {
+    margin-bottom: 20px;
+}
+
+#signup .header h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#signup .header p {
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#signup .sep {
+    height: 1px;
+    background: #e8e8e8;
+    width: 406px;
+    margin: 0px -25px;
+}
+
+#signup .inputs {
+    margin-top: 25px;
+}
+
+#signup .inputs label {
+    color: #8f8f8f;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+input::-webkit-input-placeholder {
+    color:    #b5b5b5;
+}
+
+input:-moz-placeholder {
+    color:    #b5b5b5;
+}
+
+#signup .inputs input[type=email], input[type=password] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
+#signup .inputs input[type=email]:focus, input[type=password]:focus {
+    background: #fff;
+    box-shadow: 0px 0px 0px 3px #4374a5, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+    outline: none;   
+}
+
+#signup .inputs .checkboxy {
+    display: block;
+    position: static;
+    height: 25px;
+    margin-top: 10px;
+    clear: both;
+}
+
+#signup .inputs input[type=checkbox] {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#signup .inputs label.terms {
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#signup .inputs #submit {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+        background: -moz-linear-gradient(
+        top,
+        #b9c5dd 0%,
+        #a4b0cb);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#b9c5dd),
+        to(#a4b0cb));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #737b8d;
+    -moz-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow:
+        0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0);
+    display: table;
+    position: static;
+    clear: both;
+}
+
+#signup .inputs #submit:hover {
+    background: -moz-linear-gradient(
+        top,
+        #a4b0cb 0%,
+        #b9c5dd);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#a4b0cb),
+        to(#b9c5dd));
+}
+.myBtnStyle {
+
+    font-family: 'Open sens',sans-serif;
+    margin-top:0px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px 0px 12px;
+    position: relative;
+  background-color: #5b5b5b00;
+  color: #ffffff;
+  border: #33333300;
+  font-size: 20px;
+}
+#myBtn2 {
+
+    font-family: 'Open sens',sans-serif;
+    margin-top:0px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px 0px 12px;
+    position: relative;
+  background-color: #5b5b5b00;
+  color: #ffffff;
+  border: #33333300;
+  font-size: 20px;
+}
+.myBtn_multi{
+
+    font-family: 'Open sens',sans-serif;
+    margin-top:0px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px 0px 12px;
+    position: relative;
+  background-color: #5b5b5b00;
+  color: #ffffff;
+  border: #33333300;
+  font-size: 20px;
+
+}
+
+/*modal buttons*/
+.flex-box{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-content: center;
+       
+        flex-direction: row;
+   height: 200%;
+   width: 100%;
+}
+.container1 {
+    position: relative; 
+    width: 50%;
+    margin: 10px;
+   
+    flex: 1 0 21%;
+  }
+  
+  .image1 {
+    display: block;
+    width: 80%;
+    height: auto;
+    background-color: #bdb9b939;
+    border-radius: 12rem;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #484a4b47;
+    overflow: hidden;
+    width: 80%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 12rem;
+    border: rgba(51, 51, 51, 0);
+       /*box shadow*/
+       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.225); 
+  }
+  
+  .container1:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+  }
+
+  
+  .text1 {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+/*
+  border-radius: 10px;
+  border: #333;
+     /*box shadow*/
+  /*   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.225); */
+
+.btn55 {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: #14131300;
+  }
+  .btn55:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(124, 127, 128);
+    border-radius: 10px;
+    z-index: -2;
+    border: #14131300;
+
+  }
+  .btn55:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(158, 229, 243);
+    transition: all 0.3s;
+    border-radius: 10px;
+    z-index: -1;
+    border: #14131300;
+
+  }
+  .btn55:hover {
+    color: #fff;
+    border: #14131300;
+
+  }
+  .btn55:hover:before {
+    width: 100%;
+    border: #14131300;
+
+  }
+  .image2 {
+    display: block;
+    width: 80%;
+    height: 80%;
+    height: auto;
+    background-color: #bdb9b939;
+    border-radius: 14rem;
+  }

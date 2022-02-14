@@ -1,0 +1,10 @@
+.container1{
+
+     min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.116)),url(imgs/fares.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: rgb(4, 93, 172);
+}
